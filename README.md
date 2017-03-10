@@ -18,8 +18,10 @@ This extension adds the `Snyk Test` command to check your `package.json`, `npm-s
 In the command palette (<kbd>CMD</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd>), type `Snyk Test`.
 
 ## Features
-- Count of vulnerable dependencies
+- If vulnerabilities are found, display an error with a count of vulnerable dependencies
   ![vuln count](images/vuln-count.png)
+- If no vulnerabilities are found, display an info message
+  ![no vulns](images/no-vuln.png)
 - Detailed summary of vulnerable dependencies
   ![vuln details](images/vuln-details.png)
 - Hyperlinked URLs directly to Snyk.io [VulnDB](https://snyk.io/vuln/) for more information on remediation.
