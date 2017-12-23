@@ -1,4 +1,6 @@
 # vscode-snyk
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/petermbenjamin/vscode-snyk.svg)](https://greenkeeper.io/)
 > Visual Studio Code extension for Snyk.io
 
 Check your Node.JS and Ruby dependencies against [Snyk.io](https://snyk.io/) vulnerability database.
