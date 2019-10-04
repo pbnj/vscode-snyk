@@ -1,55 +1,58 @@
 {
-    "name": "vscode-snyk",
-    "displayName": "Snyk",
-    "description": "Visual Studio Code extension for Snyk.io",
-    "version": "0.0.2",
-    "icon": "images/snyk-dog.png",
-    "publisher": "pmbenjamin",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/petermbenjamin/vscode-snyk.git"
-    },
-    "keywords": [
-        "snyk",
-        "security",
-        "vulnerability",
-        "node",
-        "ruby"
-    ],
-    "galleryBanner": {
-        "color": "#222049"
-    },
-    "engines": {
-        "vscode": "^1.10.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:extension.snykTest"
-    ],
-    "main": "./extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.snykTest",
-                "title": "Snyk Test"
-            }
-        ]
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "eslint": "^3.6.0",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
-    },
-    "dependencies": {
-        "snyk": "^1.25.2"
-    }
+  "name": "vscode-snyk",
+  "displayName": "Snyk",
+  "description": "Visual Studio Code extension for Snyk.io",
+  "version": "0.0.2",
+  "icon": "images/snyk-dog.png",
+  "publisher": "pmbenjamin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petermbenjamin/vscode-snyk.git"
+  },
+  "keywords": [
+    "snyk",
+    "security",
+    "vulnerability",
+    "node",
+    "ruby"
+  ],
+  "galleryBanner": {
+    "color": "#222049"
+  },
+  "engines": {
+    "vscode": "^1.10.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.snykTest"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.snykTest",
+        "title": "Snyk Test"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0",
+    "mocha": "^2.3.3",
+    "eslint": "^3.6.0",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
+  },
+  "dependencies": {
+    "snyk": "^1.231.0"
+  },
+  "snyk": true
 }
