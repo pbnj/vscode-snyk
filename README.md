@@ -1,7 +1,16 @@
 # vscode-snyk
-> Visual Studio Code extension for Snyk.io
+
+> _Unofficial_ Visual Studio Code extension for Snyk.io
+
+---
+
+## DEPRECATION NOTICE
+
+:warning: This project is now deprecated. As an alternative, I recommend Snyk's official extension: [**Vuln Cost**](https://snyk.io/security-scanner-vuln-cost/).
 
 Check your Node.JS and Ruby dependencies against [Snyk.io](https://snyk.io/) vulnerability database.
+
+---
 
 ![feature X](images/vscode-snyk-screenshot.png)
 
